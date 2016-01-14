@@ -1,0 +1,10 @@
+[Unit]
+Description=Dell Inspiron 7348 screen auto-rotation service
+After=graphical.target
+
+[Service]
+Type=simpleop
+ExecStart=/usr/bin/inspironRotationScript.sh
+
+[Install]
+WantedBy=default.target
